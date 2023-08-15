@@ -1,0 +1,67 @@
+/* Basic CSS for the page layout and styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6d8d8;
+    overflow: hidden;
+    font-family: 'Indie Flower', cursive;
+    background-color: #DBE8D8;
+}
+
+header {
+    background-color: #FFFF5C;
+    color: rgb(69, 66, 66);
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: x-large;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#content {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-size: 300%;
+    color: #0A7029;
+}
+#content img {
+    width: 40%;
+}
+
+/* media queries */
+@media(max-width: 400px) {
+    #content {
+        font-size: 150%;
+        height: 60vh;
+    }
+    #content img {
+        width: 80%;   
+    }
+    nav {
+        padding: 5px;
+    }
+}
+
